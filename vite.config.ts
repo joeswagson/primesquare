@@ -9,7 +9,7 @@ const BIND_ADDRESS = BIND_TO_PUBLIC ? "0.0.0.0" : "127.0.0.1";
 // https://vite.dev/config/
 export default defineConfig({
     server: {
-        bind_address: BIND_ADDRESS,
+        host: BIND_ADDRESS,
         port: PORT
     },
     plugins: [react()],
